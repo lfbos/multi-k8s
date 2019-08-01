@@ -19,20 +19,20 @@ spec:
         paths:
           - path: /?(.*)
             backend:
-              serviceName: client-cluster-ip-service
+              serviceName: client-load-balancer-service
               servicePort: 3000
           - path: /api/?(.*)
             backend:
-              serviceName: server-cluster-ip-service
+              serviceName: server-load-balancer-service
               servicePort: 5000
     - host: www.lboscan.site
       http:
         paths:
           - path: /?(.*)
             backend:
-              serviceName: client-cluster-ip-service
+              serviceName: client-load-balancer-service
               servicePort: 3000
           - path: /api/?(.*)
             backend:
-              serviceName: server-cluster-ip-service
+              serviceName: server-load-balancer-service
               servicePort: 5000
