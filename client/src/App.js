@@ -12,8 +12,8 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Fib Calculator version KUBERNETES!</h1>
-            <Link to="/">Home</Link>
+            <h1 className="App-title">Fib Calculator k8s</h1>
+            <Link to="/">Home</Link>{' '}
             <Link to="/otherpage">Other Page</Link>
           </header>
           <div>
