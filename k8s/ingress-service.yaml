@@ -19,20 +19,20 @@ spec:
         paths:
           - path: /?(.*)
             backend:
-              serviceName: client-node-port-service
+              serviceName: client-cluster-ip-service
               servicePort: 3000
           - path: /api/?(.*)
             backend:
-              serviceName: server-node-port-service
+              serviceName: server-cluster-ip-service
               servicePort: 5000
     - host: www.lboscan.site
       http:
         paths:
           - path: /?(.*)
             backend:
-              serviceName: client-node-port-service
+              serviceName: client-cluster-ip-service
               servicePort: 3000
           - path: /api/?(.*)
             backend:
-              serviceName: server-node-port-service
+              serviceName: server-cluster-ip-service
               servicePort: 5000
