@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: client-load-balancer-service
+  name: client-node-port-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     component: web
   ports:
